@@ -1,0 +1,7 @@
+-   id: gn-format
+    name: GN Format
+    description: This hook formats GN files using the gn binary in a Docker container.
+    entry: ghcr.io/kinddragon/pre-commit-gn-format/gn-format-hook:85944ebc24a9
+    language: docker_image
+    types: [file]
+    files: \.gni?$
