@@ -1,0 +1,22 @@
+[metadata]
+name = gn-build-py
+version = latest
+description = Python wrapper around invoking gn (https://gn.googlesource.com/gn/)
+long_description = file: README.md
+long_description_content_type = text/markdown
+url = https://github.com/kinddragon/gn-build-py
+author = Arkady Skapkin
+author_email = arkady.shapkin@gmail.com
+license = MIT
+license_files = LICENSE
+classifiers =
+    License :: OSI Approved :: MIT License
+    Programming Language :: Python :: 3
+    Programming Language :: Python :: 3 :: Only
+    Programming Language :: Python :: Implementation :: CPython
+    Programming Language :: Python :: Implementation :: PyPy
+
+[options]
+python_requires = >=3.8
+setup_requires =
+    setuptools-download
