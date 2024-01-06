@@ -3,5 +3,4 @@
   description: This hook formats GN files using the gn binary packed to python package.
   entry: gn format
   language: python
-  types: [file]
   files: \.(gn|gni)$

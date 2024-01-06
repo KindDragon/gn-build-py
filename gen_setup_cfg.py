@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import configparser
+import os
 import re
 import urllib.request
 
@@ -80,6 +81,14 @@ extract_path = {details["binary"]}
 
 def create_setup_cfg(version, download_scripts):
     config = configparser.ConfigParser()
+
+    # Check if setup.cfg already exists
+    if os.path.exists("setup.cfg"):
+        config.read("setup.cfg")
+        existing_version = config.get("metadata", "version", fallback=None)
+        if existing_version == version:
+            raise Exception(f"Error: setup.cfg already has the same version {version}")
+
     config.read("setup.cfg.template")
 
     # Replace placeholders in the template

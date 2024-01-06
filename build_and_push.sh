@@ -27,5 +27,3 @@ git tag -a "${VERSION}" -m "GN version ${VERSION}"
 # Step 6: Push the changes and tag
 git push origin main
 git push origin "${VERSION}"
-git checkout origin/main -B latest
-git push origin latest

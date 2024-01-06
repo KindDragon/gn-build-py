@@ -8,10 +8,12 @@ To use `gn-build-py` as a pre-commit hook for formatting GN files, add the follo
 
 ```yaml
 -   repo: https://github.com/KindDragon/gn-build-py.git
-    rev: "latest"
+    rev: ''
     hooks:
     -   id: gn-build-py
 ```
+
+Than run `pre-commit autoupdate` to update config to latest available gn build version.
 
 This configuration ensures that the GN binary is available and used by pre-commit to format GN files in your repository.
 

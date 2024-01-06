@@ -26,3 +26,4 @@ repos:
     hooks:
       - id: pyupgrade
         args: [--py38-plus]
+exclude: '^setup.cfg$'
