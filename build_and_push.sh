@@ -8,7 +8,7 @@ cd "$DIR"
 python3 gen_setup_cfg.py
 
 # Extract version from setup.cfg
-VERSION=$(sed -n 's/version = .*+\(.*\)/\1/p' setup.cfg)
+VERSION=$(sed -n 's/version = \(\d*\)/\1/p' setup.cfg)
 
 # Step 2: Build the package
 python3 setup.py sdist bdist_wheel
